@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Ho's Portfolio Page</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<header>
+    <nav>
+        <h1><a href="/">Albert Ho</a></h1>
+        <a href="/pages/about.html">About</a> |
+        <a href="/pages/research.html">Research</a> |
+        <a href="/pages/projects.html">Projects</a> |
+        <a href="/pages/resume.html">Resume</a> |
+        <a href="/pages/contact.html">Contact</a>
+    </nav>
+</header>
+<body>
+    <svg viewBox="0 0 100 4" width="100%" height="4" preserveAspectRatio="none">
+        <line x1="0" y1="2" x2="100" y2="2" stroke="#0b3d91" stroke-width="4" />
+    </svg>
+    <img src="/assets/profile.jpg" alt="Portfolio Image">
+    <main>
+        <h2>Who Am I?</h2>
+        <br>
+        <p>I am an enthusiastic and highly motivated undergraduate student working towards a B.S. and M.S. Computer Science. I am interested in the application of Computer Science within bioinformatics and machine learning, especially in the procurement of accelerated bioinformatics solutions utilizing machine learning and modeling. Also, I am eager to learn more about the technology and problem solving within computational sciences, especially in regard to manipulating and analyzing data efficiently and accurately. Please reach out for any opportunities or internships, I would love to get in touch.</p>
+
+        <span><strong>Note:</strong><i> Page is still under construction.</i></span>
+
+        <hello-world></hello-world>
+    </main>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                console.log('Hello world!');
+            }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+    </script>
+    <noscript>
+        <p>Please enable JavaScript to view this content.</p>
+    </noscript>
+</body>
+<footer>
+    <p>&copy; 2025 Albert Ho. All rights reserved.</p>
+</footer>
+</html>
