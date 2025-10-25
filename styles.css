@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 1rem 0rem 1rem; 
+}
+
+nav #nav-links {
+    margin-left: auto;
+}
+
+nav #nav-links a {
+    padding: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
