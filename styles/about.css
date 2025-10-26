@@ -7,18 +7,18 @@ main {
     padding: 1rem;
 }
 
-#Socials {
+#socials {
     display: flex;
     flex-direction: column;
 }
 
-#Socials ul {
+#socials ul {
     display: flex;
     justify-content: center;
     gap: 5rem;
 }
 
-#Socials img {
+#socials img {
     width: clamp(5vh, 5vw, 5vh);
     height: clamp(5vh, 5vw, 5vh);
 }
