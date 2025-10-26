@@ -23,14 +23,6 @@ article img {
     height: 40vh;
 }
 
-#profile-desc h2 {
-    font-size: clamp(1rem, 2vw, 2rem);
-}
-
-#profile-desc p {
-    font-size: clamp(1rem, 2vw, 2rem);
-}
-
 @media (max-width: 800px) {
     main {
         flex-direction: column;
