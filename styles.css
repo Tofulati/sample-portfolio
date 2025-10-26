@@ -14,6 +14,10 @@ nav #nav-links {
     margin-left: auto;
 }
 
+#notice {
+    background-color: yellow;
+}
+
 footer {
     display: flex;
     justify-content: center;
