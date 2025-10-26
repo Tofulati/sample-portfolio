@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albert Ho's Portfolio Page</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
@@ -23,14 +24,17 @@
     <svg viewBox="0 0 100 4" width="100%" height="4" preserveAspectRatio="none">
         <line x1="0" y1="2" x2="100" y2="2" stroke="black" stroke-width="4" />
     </svg>
-    <img src="/assets/profile.jpg" alt="Portfolio Image">
     <main>
-        <h2>Who Am I?</h2>
-        <br>
-        <p>I am an enthusiastic and highly motivated undergraduate student working towards a B.S. and M.S. Computer Science. I am interested in the application of Computer Science within bioinformatics and machine learning, especially in the procurement of accelerated bioinformatics solutions utilizing machine learning and modeling. Also, I am eager to learn more about the technology and problem solving within computational sciences, especially in regard to manipulating and analyzing data efficiently and accurately. Please reach out for any opportunities or internships, I would love to get in touch.</p>
-
-        <span><strong>Note:</strong><i> Page is still under construction.</i></span>
-
+        <article>
+            <img src="./assets/profile.jpg" alt="Profile Pic">
+            <section id="profile-desc">
+                <h2>Who Am I?</h2>
+                <p>I am an enthusiastic and highly motivated undergraduate student working towards a B.S. and M.S. Computer Science. I am interested in the application of Computer Science within bioinformatics and machine learning, especially in the procurement of accelerated bioinformatics solutions utilizing machine learning and modeling. Also, I am eager to learn more about the technology and problem solving within computational sciences, especially in regard to manipulating and analyzing data efficiently and accurately. Please reach out for any opportunities or internships, I would love to get in touch.</p>
+            </section>
+        </article>
+        <span id="notice">
+            <strong>Note:</strong><i> Page is still under construction.</i>
+        </span>
         <hello-world></hello-world>
     </main>
 

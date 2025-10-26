@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+article img {
+    border-radius: 50%;
+    width: 40vh;
+    height: 40vh;
+}
+
+@media (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #profile-desc {
+        max-width: 90vw;
+    }
+
+    img {
+        width: 30vh;
+        height: 30vh;
+    }
+}
