@@ -21,9 +21,19 @@ nav {
 }
 
 nav a {
-    text-decoration: underline;
-    padding: 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
     color: black;
+    border-radius: 6px; 
+    transition: background-color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #e0e0e0; 
+}
+
+#nav-links a.active {
+    background-color: #d6d6d6;
 }
 
 h1 a {
@@ -56,25 +66,35 @@ footer {
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
-        align-items: flex-start; /* stack items to the left (or use center if preferred) */
-        gap: 0.5rem;
+        align-items: flex-start; 
         padding: 1rem;
     }
 
+    nav a {
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        color: black;
+        border-radius: 6px; 
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+        background-color: #e0e0e0; 
+    }
+
     h1 {
-        font-size: 2rem; /* slightly smaller name text */
+        font-size: 2rem;
     }
 
     #nav-links {
         display: flex;
-        flex-direction: column; /* stack vertically */
+        flex-direction: column;
         width: 100%;
         margin-left: 0;
-        text-decoration: underline;
     }
 
     #nav-links a {
-        font-size: 0.9rem; /* shrink font size */
-        padding: 0.4rem 0;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.5rem;
     }
 }
