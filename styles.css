@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Spice&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Helvetica;
 }
 
 body {
@@ -19,10 +22,22 @@ nav {
 nav a {
     text-decoration: none;
     padding: 0.5rem;
+    color: black;
+}
+
+h1 a {
+    font-family: "Bitcount Grid Single", Helvetica;
+    font-weight: 400;
+    font-style: light;
+    font-size: 3rem;
 }
 
 nav #nav-links {
     margin-left: auto;
+}
+
+#nav-links a {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 #notice {
