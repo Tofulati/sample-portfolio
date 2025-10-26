@@ -22,16 +22,44 @@ research-card {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    padding: 3rem 1rem;
+    padding: 2rem;
     gap: 2rem;
-    height: clamp(30vh, 35vw, 40vh);
-    width: clamp(20vh, 25vw, 30vh);
     border-radius: 1rem;
 }
 
+research-card h3 {
+    width: 30vw;
+    text-align: center;
+}
+
+research-card p {
+    text-align: center;
+    width: 30vw;
+}
+
+research-card a {
+    text-decoration: none;
+    color: black
+}
+
 @media (max-width: 800px) {
+    .research-container {
+        margin: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     research-card {
-        width: 50%;
-        margin: 0 auto;
+        display: flex;
+        padding: 3rem;
+    }
+
+    research-card h3 {
+        font-size: 1rem;
+    }
+
+    research-card p {
+        font-size: 0.85rem;
     }
 }
