@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: clamp();
     padding: 2rem;
     gap: 3rem;
 }
@@ -11,6 +12,7 @@ article {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
 }
 
