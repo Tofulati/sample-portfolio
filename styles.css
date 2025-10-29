@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Spice&display=swap');
 
 :root {
-  --primary-bg: #f5f5f5;
+  --primary-bg: #4a4a4a;
   --hover-bg: #e0e0e0;
 }
 
@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Helvetica;
-    background-color: var(--primary-bg, #fafafa);
+    background-color: white;
 
     body {
         display: flex;
@@ -22,7 +22,7 @@ html, body {
             align-items: center;
             padding: 0 1rem;
             font-size: clamp(1rem, 1rem, 2rem);
-            background-color: var(--primary-bg, #f5f5f5);
+            background-color: white;
 
             & h1 {
                 & a {
@@ -100,6 +100,7 @@ html, body {
             display: flex;
             justify-content: center;
             padding: 1rem;
+            color: white;
             background: var(--primary-bg, #f5f5f5);
         }
     }
