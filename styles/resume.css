@@ -5,27 +5,27 @@ main {
     align-items: center;
     padding: 1rem 2rem;
     gap: 1rem;
-}
 
-.resume-container {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    padding: 1rem 2rem;
-}
+    .resume-container {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        padding: 1rem 2rem;
 
-section article {
-    padding: 0 1rem;
-}
+        & button {
+            align-self: flex-end;
+            padding: 0.5rem 1rem;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+        }
 
-section {
-    padding: 0.5rem;
-}
+        section {
+            padding: 0.5rem;
 
-.resume-container button {
-    align-self: flex-end;
-    padding: 0.5rem 1rem;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: #f5f5f5;
+            & article {
+                padding: 0 1rem;
+            }
+        }
+    }
 }
