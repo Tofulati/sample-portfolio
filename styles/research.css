@@ -5,40 +5,40 @@ main {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-}
 
-.research-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-}
+    .research-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
 
-research-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    padding: 2rem;
-    gap: 2rem;
-    border-radius: 1rem;
-}
+        research-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 2rem;
+            gap: 2rem;
+            border-radius: 1rem;
 
-research-card h3 {
-    width: 30vw;
-    text-align: center;
-}
+            & h3 {
+                width: 30vw;
+                text-align: center;
+            }
 
-research-card p {
-    text-align: center;
-    width: 30vw;
-}
+            & p {
+                text-align: center;
+                width: 30vw;
+            }
 
-research-card a {
-    color: black
+            & a {
+                color: black
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
