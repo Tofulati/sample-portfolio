@@ -1,3 +1,9 @@
+:root {
+  --card-border: 1px solid black;
+  --card-radius: 1rem;
+  --card-gap: 2rem;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -12,7 +18,7 @@ main {
         justify-content: center;
         align-items: center;
         padding: 1rem;
-        gap: 1rem;
+        gap: var(--card-gap, 2rem);
 
         @media (max-width: 800px) {
             margin: 1rem;
@@ -39,23 +45,23 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid black;
+            border: var(--card-border, 1px solid black);
             padding: 2rem;
-            gap: 2rem;
-            border-radius: 1rem;
+            gap: var(--card-gap, 2rem);
+            border-radius: var(--card-radius, 1rem);
 
             & h3 {
-                width: 30vw;
+                width: 30dvw;
                 text-align: center;
             }
 
             & p {
                 text-align: center;
-                width: 30vw;
+                width: 30dvw;
             }
 
             & a {
-                color: black
+                color: black;
             }
         }
     }

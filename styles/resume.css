@@ -1,3 +1,9 @@
+:root {
+  --card-border: 1px solid black;
+  --button-bg: #f5f5f5;
+  --button-radius: 4px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -9,15 +15,15 @@ main {
     & .resume-container {
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        border: var(--card-border, 1px solid black);
         padding: 1rem 2rem;
 
         & button {
             align-self: flex-end;
             padding: 0.5rem 1rem;
-            border: 1px solid black;
-            border-radius: 4px;
-            background-color: #f5f5f5;
+            border: var(--card-border, 1px solid black);
+            border-radius: var(--button-radius, 4px);
+            background-color: var(--button-bg, #f5f5f5);
         }
 
         section {

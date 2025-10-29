@@ -12,13 +12,13 @@ main {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 80vw;
+        width: 80dvw;
         gap: 3rem;
 
         & img {
             border-radius: 50%;
-            width: 40vh;
-            height: 40vh;
+            width: 40dvh;
+            height: 40dvh;
         }
     }
 
@@ -30,12 +30,12 @@ main {
             flex-wrap: wrap;
 
             & img {
-                width: 30vh;
-                height: 30vh;
+                width: 30dvh;
+                height: 30dvh;
             }
 
             & #profile-desc {
-                max-width: 90vw;
+                max-width: 90dvw;
             }
         }
     }
