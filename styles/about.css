@@ -16,7 +16,7 @@ main {
             gap: 5rem;
         }
 
-        img {
+        & img {
             width: clamp(5vh, 5vw, 5vh);
             height: clamp(5vh, 5vw, 5vh);
         }

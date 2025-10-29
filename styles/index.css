@@ -26,19 +26,19 @@ main {
 @media (max-width: 800px) {
     main {
         flex-direction: column;
-    }
 
-    article {
-        align-items: center;
-        flex-wrap: wrap;
-    }
+        & article {
+            align-items: center;
+            flex-wrap: wrap;
 
-    #profile-desc {
-        max-width: 90vw;
-    }
+            & img {
+                width: 30vh;
+                height: 30vh;
+            }
 
-    img {
-        width: 30vh;
-        height: 30vh;
+            & #profile-desc {
+                max-width: 90vw;
+            }
+        }
     }
 }

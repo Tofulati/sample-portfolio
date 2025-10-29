@@ -6,7 +6,7 @@ main {
     justify-content: center;
     padding: 1rem;
 
-    .research-container {
+    & .research-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -14,7 +14,7 @@ main {
         padding: 1rem;
         gap: 1rem;
 
-        research-card {
+        & research-card {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -47,18 +47,18 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
 
-    research-card {
-        display: flex;
-        padding: 3rem;
-    }
+        research-card {
+            display: flex;
+            padding: 3rem;
 
-    research-card h3 {
-        font-size: 1rem;
-    }
+            & h3 {
+                font-size: 1rem;
+            }
 
-    research-card p {
-        font-size: 0.85rem;
+            & p {
+                font-size: 0.85rem;
+            }
+        }
     }
 }

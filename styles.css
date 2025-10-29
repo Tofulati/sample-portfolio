@@ -10,7 +10,7 @@ html, body {
         flex-direction: column;
         min-height: 100vh;
 
-        nav {
+        & nav {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -38,7 +38,7 @@ html, body {
                 }
             }
 
-            #nav-links {
+            & #nav-links {
                 margin-left: auto;
 
                 & a.active {
