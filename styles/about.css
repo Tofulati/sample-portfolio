@@ -5,20 +5,20 @@ main {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-}
 
-#socials {
-    display: flex;
-    flex-direction: column;
-}
+    #socials {
+        display: flex;
+        flex-direction: column;
 
-#socials ul {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-}
+        & ul {
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+        }
 
-#socials img {
-    width: clamp(5vh, 5vw, 5vh);
-    height: clamp(5vh, 5vw, 5vh);
+        img {
+            width: clamp(5vh, 5vw, 5vh);
+            height: clamp(5vh, 5vw, 5vh);
+        }
+    }
 }
