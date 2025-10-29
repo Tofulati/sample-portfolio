@@ -21,10 +21,8 @@ main {
             height: 40vh;
         }
     }
-}
 
-@media (max-width: 800px) {
-    main {
+    @media (max-width: 800px) {
         flex-direction: column;
 
         & article {
