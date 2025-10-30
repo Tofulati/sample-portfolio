@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Spice&display=swap');
 
+@property --primary-bg {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: color(display-p3 0.3 0.3 0.3);
+}
+
+@property --hover-bg {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: color-mix(in oklch, var(--primary-bg), white 30%);
+}
+
 :root {
-  --primary-bg: #4a4a4a;
-  --hover-bg: #e0e0e0;
+  --primary-bg: var(--primary-bg);
+  --hover-bg: var(--hover-bg);
 }
 
 html, body {
@@ -50,7 +62,7 @@ html, body {
                 margin-left: auto;
 
                 & a.active {
-                    background-color: var(--hover-bg, #d6d6d6);
+                    background-color: var(--hover-bg, #e0e0e0);
                 }
             }
         }
