@@ -12,6 +12,40 @@ main {
         color: var(--primary);
     }
 
+    article {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+
+        & > section {
+            flex: 1;
+            padding: 1rem;
+            overflow: hidden;
+        }
+    }
+
+    #hobbies-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+
+        img {
+            flex: 1 1 20%;   
+            max-width: 22%;   
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+        }
+
+        video {
+            flex: 1 1 40%;   
+            max-width: 45%;
+            aspect-ratio: 16/9; 
+            border-radius: 8px;
+        }
+    }
+
     #socials {
         display: flex;
         flex-direction: column;
@@ -25,6 +59,29 @@ main {
         & img {
             width: clamp(5vh, 5vw, 5vh);
             height: clamp(5vh, 5vw, 5vh);
+        }
+    }
+
+    @media (max-width: 700px) {
+        article {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }        
+
+        #socials ul {
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        #hobbies-gallery img {
+            flex: 1 1 45%; 
+            max-width: 48%;
+        }
+
+        #hobbies-gallery video {
+            flex: 1 1 100%;
+            max-width: 100%;
         }
     }
 }
