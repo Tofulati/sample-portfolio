@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Spice&display=swap');
 
-:root {
+:root:has(#theme-toggle:checked) {
     --text: #0c1815;
     --background: #f8fcfa;
     --primary: #40ceb4;
     --secondary: #8eecdb;
-    --accent: #50f1d3;  
+    --accent: #50f1d3;
 }
 
-:root:has(#theme-toggle:checked) {
+:root:has(#theme-toggle:not(:checked)) {
     --text: #e7f3f0;
     --background: #030705;
     --primary: #31bfa5;
@@ -122,6 +122,18 @@ html, body {
                     &:hover {
                         background: color-mix(in oklch, var(--accent), var(--text) 20%);
                     }
+
+                    &::before {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                #theme-toggle:checked + .theme-toggle-label::before {
+                    content: '\1F31E';
+                }
+
+                #theme-toggle:not(:checked) + .theme-toggle-label::before {
+                    content: '\1F311';
                 }
             }
         }
