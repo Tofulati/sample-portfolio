@@ -34,7 +34,7 @@ main {
 
                 & h3 {
                     font-size: 1rem;
-                    color: var(--secondary);
+                    color: var(--primary);
                 }
 
                 & p {
@@ -58,7 +58,7 @@ main {
             & h3 {
                 width: 30dvw;
                 text-align: center;
-                color: var(--secondary);
+                color: var(--primary);
             }
 
             & p {
