@@ -5,6 +5,8 @@ main {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    background-color: var(--background);
+    color: var(--secondary);
 
     & form {
         display: flex;
@@ -20,23 +22,31 @@ main {
             width: 100%;
             max-width: 50dvw;
             min-width: 40dvw;
+            border: 1px solid var(--text);
+            background-color: var(--background);
+            color: var(--text);
 
             & legend {
                 font-weight: bold;
                 font-size: 1.2rem;
                 text-align: center;
                 margin-bottom: 0.5rem;
+                color: var(--secondary);
             }
 
             & input, textarea {
                 border-radius: 1rem;
-                border: 0.5px solid;
+                border: 0.5px solid var(--text);
                 padding: 0.5rem;
+                background-color: var(--background);
+                color: var(--text);
             }
 
             & button {
                 padding: 0.5rem; 
                 margin: 1rem;
+                background: var(--primary);
+                color: var(--background);
             }
         }
     }

@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bungee+Spice&display=swap');
 
-@property --primary-bg {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: color(display-p3 0.3 0.3 0.3);
+:root[data-theme="light"] {
+  --text: #0c1815;
+  --background: #f8fcfa;
+  --primary: #40ceb4;
+  --secondary: #8eecdb;
+  --accent: #50f1d3;
 }
 
-@property --hover-bg {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: color-mix(in oklch, var(--primary-bg), white 30%);
+:root[data-theme="dark"] {
+  --text: #e7f3f0;
+  --background: #030705;
+  --primary: #31bfa5;
+  --secondary: #137160;
+  --accent: #0eaf91;
 }
 
-:root {
-  --primary-bg: var(--primary-bg);
-  --hover-bg: var(--hover-bg);
-}
 
 html, body {
-    height: 100%;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: system-ui, sans-serif;
     margin: 0;
-    font-family: Helvetica;
-    background-color: white;
+    padding: 0;
+    transition: background-color 0.6s ease, color 0.6s ease;
 
     body {
         display: flex;
         flex-direction: column;
         min-height: 100dvh;
+
+        & header {
+            background: color-mix(in oklch, var(--primary), black 20%);
+            color: var(--background);
+            padding: 1rem 2rem;
+            text-align: center;
+            transition: background-color 0.6s ease;
+        }
 
         & nav {
             display: flex;
@@ -34,7 +44,7 @@ html, body {
             align-items: center;
             padding: 0 1rem;
             font-size: clamp(1rem, 1rem, 2rem);
-            background-color: white;
+            background-color: var(--primary-bg);
 
             & h1 {
                 & a {
@@ -42,36 +52,46 @@ html, body {
                     font-weight: 400;
                     font-style: light;
                     font-size: clamp(1rem, 2rem, 2rem);
-                    color: black
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: color 0.3s ease;
                 }
-            }
 
-            & a {
-                text-decoration: none;
-                padding: 0.5rem 1rem;
-                color: black;
-                border-radius: 6px; 
-                transition: background-color 0.2s ease-in-out;
-
-                &:hover {
-                    background-color: var(--hover-bg, #e0e0e0);
+                & a:hover {
+                    color: var(--accent);
                 }
             }
 
             & #nav-links {
                 margin-left: auto;
 
+                & a {
+                    color: var(--text);
+                    text-decoration: none;
+                    margin-left: 1rem;
+                    transition: color 0.3s ease;
+                }
+
+                & a:hover {
+                    color: var(--accent);
+                }
+
                 & a.active {
-                    background-color: var(--hover-bg, #e0e0e0);
+                    font-weight: bold;
+                    color: var(--secondary);
                 }
             }
+        }
+
+        main {
+            padding: 2rem;
+            transition: background-color 0.6s ease;
         }
 
         @media (max-width: 700px) {
             nav {
                 flex-direction: column;
-                align-items: flex-start; 
-                padding: 1rem;
+                justify-content: center;
 
                 h1 {
                     font-size: 2rem;
@@ -79,41 +99,51 @@ html, body {
 
                 & a {
                     text-decoration: none;
-                    padding: 0.5rem 2rem;
-                    color: black;
-                    border-radius: 6px; 
+                    color: var(--text);
                     transition: background-color 0.2s ease-in-out;
-
-                    &:hover {
-                        background-color: var(--hover-bg, #e0e0e0);
-                    }
                 }
 
                 #nav-links {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-                    margin-left: 0;
 
                     & a {
                         font-size: 0.9rem;
-                        padding: 0.5rem 0.5rem;
+                        padding: 0.5rem;
                     }
                 }
             }
         }
         
         & #notice {
-            background-color: yellow;
+            display: block;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+            text-align: center;
+        }
+
+        button {
+            background: var(--primary);
+            color: var(--text);
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background 0.4s ease, color 0.4s ease;
+
+            &:hover {
+                background-color: var(--accent);
+            }
         }
 
         & footer {
-            margin-top: auto; 
-            display: flex;
-            justify-content: center;
+            background: color-mix(in oklch, var(--primary), black 25%);
+            color: var(--text);
+            text-align: center;
             padding: 1rem;
-            color: white;
-            background: var(--primary-bg, #f5f5f5);
+            transition: background-color 0.6s ease;
         }
     }
 }
