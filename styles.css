@@ -211,30 +211,33 @@ html, body {
             }
 
             & ul {
+                display: flex;             
+                flex-direction: row;    
+                gap: 0.5rem; 
                 padding: 0;
-            }
-
-            & #nav-links {
                 margin-left: auto;
                 align-items: center;
                 flex-wrap: nowrap;
                 white-space: nowrap;
                 min-width: 0;
 
-                & a {
-                    color: var(--text);
-                    text-decoration: none;
-                    margin-left: 1rem;
-                    transition: color 0.3s ease;
-                }
+                & li {
+                    list-style-type: none;
+                    & a {
+                        color: var(--text);
+                        text-decoration: none;
+                        margin-left: 1rem;
+                        transition: color 0.3s ease;
+                    }
 
-                & a:hover {
-                    color: var(--accent);
-                }
+                    & a:hover {
+                        color: var(--accent);
+                    }
 
-                & a.active {
-                    font-weight: bold;
-                    color: var(--secondary);
+                    & a.active {
+                        font-weight: bold;
+                        color: var(--secondary);
+                    }
                 }
             }
 
@@ -295,16 +298,20 @@ html, body {
                     transition: background-color 0.2s ease-in-out;
                 }
 
-                #nav-links {
+                ul {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     align-items: center;
                     justify-content: center;
 
-                    & a {
-                        font-size: 0.9rem;
-                        padding: 0.5rem;
+                    & li {
+                        list-style-type: none;
+
+                        & a {
+                            font-size: 0.9rem;
+                            padding: 0.5rem;
+                        }
                     }
                 }
             }
