@@ -5,27 +5,27 @@
 }
 
 :root {
-    --text: light-dark(#0c1815, #e7f3f0);
-    --background: light-dark(#f8fcfa, #030705);
-    --primary: light-dark(#40ceb4, #31bfa5);
-    --secondary: light-dark(#8eecdb, #137160);
-    --accent: light-dark(#50f1d3, #0eaf91);
+    --text: light-dark(#eaf0f1, #0e1415);
+    --background: light-dark(#1a2227, #e0f1f9);
+    --primary: light-dark(#578594, #6b9aa9);
+    --secondary: light-dark(#365863, #9dbfc9);
+    --accent: light-dark(#3e6c7a, #84b3c1);
 }
 
 :root:has(#theme-toggle:checked) {
-    --text: #0c1815;
-    --background: #f8fcfa;
-    --primary: #40ceb4;
-    --secondary: #8eecdb;
-    --accent: #50f1d3;
+    --text: #0e1415;
+    --background: #e0f1f9;
+    --primary: #6b9aa9;
+    --secondary: #9dbfc9;
+    --accent: #84b3c1;
 }
 
 :root:has(#theme-toggle:not(:checked)) {
-    --text: #e7f3f0;
-    --background: #030705;
-    --primary: #31bfa5;
-    --secondary: #137160;
-    --accent: #0eaf91;
+    --text: #eaf0f1;
+    --background: #1a2227;
+    --primary: #578594;
+    --secondary: #365863;
+    --accent: #3e6c7a;
 }
 
 @keyframes showLine {
