@@ -210,6 +210,10 @@ html, body {
                 }
             }
 
+            & ul {
+                padding: 0;
+            }
+
             & #nav-links {
                 margin-left: auto;
                 align-items: center;
@@ -296,6 +300,7 @@ html, body {
                     flex-direction: column;
                     width: 100%;
                     align-items: center;
+                    justify-content: center;
 
                     & a {
                         font-size: 0.9rem;

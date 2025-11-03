@@ -9,7 +9,12 @@ main {
     background-color: var(--background);
     color: var(--text);
 
-    article {
+    .intro-text {
+        white-space: pre;        
+        font-family: monospace; 
+    }
+
+    #about-desc {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -23,15 +28,15 @@ main {
 
         & img {
             border-radius: 50%;
-            width: 40dvh;
-            height: 40dvh;
+            width: 30dvh;
+            height: 30dvh;
         }
     }
 
     @media (max-width: 800px) {
         flex-direction: column;
 
-        & article {
+        & #about-desc {
             align-items: center;
             flex-wrap: wrap;
 
